@@ -10,7 +10,6 @@
 	</engines>
 
 	<asset src="www/Dummy.js" target="js/Dummy.js"/>
-
 	<js-module src="www/Dummy.js" name="Dummy">
 		<clobbers target="dummy" />
 	</js-module>
@@ -22,6 +21,9 @@
 			<feature name="Dummy">
 				<param name="android-package" value="de.dummy.Dummy"/>
 			</feature>
+		</config-file>
+		<config-file target="res/values/colors.xml" parent="/*">
+			<color name="cdv_splashscreen_background">#FFFFFF</color>   
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest">
 			<uses-permission android:name="com.google.android.gms.permission.AD_ID" tools:node="remove"/>
