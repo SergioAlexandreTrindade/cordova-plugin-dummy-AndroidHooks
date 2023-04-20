@@ -15,13 +15,6 @@
 	</js-module>
 
 	<platform name="android">
-		<config-file parent="/resources" target="app/src/main/res/values/themes.xml">
-		  <style name="Theme.App.MySplashScreen" parent="Theme.SplashScreen">
-		    <item name="windowSplashScreenBackground">#FFFFFF</item>
-		    <item name="windowSplashScreenIconBackgroundColor">#FFFFFF</item>
-		    <item name="postSplashScreenTheme">@style/MyTheme</item>
-		  </style>
-		</config-file>
 		
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="Dummy">
