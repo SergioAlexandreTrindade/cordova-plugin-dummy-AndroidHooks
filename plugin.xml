@@ -10,25 +10,16 @@
 	</engines>
 
 	<asset src="www/Dummy.js" target="js/Dummy.js"/>
-	<js-module src="www/Dummy.js" name="Dummy">
+	<js-module src="www/Dummy.js" name="Dummy"> 
 		<clobbers target="dummy" />
 	</js-module>
 
 	<platform name="android">
-		<config-file parent="/resources" target="app/src/main/res/values/themes.xml" mode="merge">
-		     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
-			  <item name="windowSplashScreenBackground">#FFFFFF</item>
-			  <item name="windowSplashScreenIconBackgroundColor">#FFFFFF</item>
-			  <item name="postSplashScreenTheme">@style/MyTheme</item>
-		     </style>
+		<config-file target="res/values/colors.xml" mode="replace"> parent="/*">
+			<color name="cdv_splashscreen_background">#FFFFFF</color>   
 		</config-file>
+		
 		<config-file target="res/xml/config.xml" parent="/*">
-			<resource-file src="resources/android/colors.xml" target="app/src/main/res/values/colors.xml" />
-			<resources>
-			    <color name="cdv_splashscreen_background">#FFFFFF</color>
-			</resources>
-
-			<preference name="AndroidWindowSplashScreenBackground" value="#FFFFFFFF"/>
 			<feature name="Dummy">
 				<param name="android-package" value="de.dummy.Dummy"/>
 			</feature>
