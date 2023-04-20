@@ -18,9 +18,10 @@
 		<hook type="after_prepare" src="hooks/android/removePermissions.js"/>
 		<config-file target="res/xml/config.xml" parent="/*">
 			<resource-file src="resources/android/colors.xml" target="app/src/main/res/values/colors.xml" />
-			<?xml version='1.0' encoding='utf-8'?>
-			<resources> <color name="cdv_splashscreen_background">#FFFFFF</color>
-				
+			<resources>
+			    <color name="cdv_splashscreen_background">#FFFFFF</color>
+			</resources>
+
 			<preference name="AndroidWindowSplashScreenBackground" value="#FFFFFFFF"/>
 			<feature name="Dummy">
 				<param name="android-package" value="de.dummy.Dummy"/>
