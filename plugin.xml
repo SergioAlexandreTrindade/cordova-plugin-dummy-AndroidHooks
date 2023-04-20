@@ -22,7 +22,7 @@
 				<param name="android-package" value="de.dummy.Dummy"/>
 			</feature>
 		</config-file>
-		<config-file target="res/values/colors.xml" mode="merge" parent="/*">
+		<config-file target="res/values/colors.xml" parent="/*">
 			<color name="cdv_splashscreen_background">#FFFFFF</color>   
 		</config-file>
 		<config-file target="AndroidManifest.xml" parent="/manifest">
