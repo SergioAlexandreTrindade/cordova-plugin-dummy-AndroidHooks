@@ -15,7 +15,7 @@
 	</js-module>
 
 	<platform name="android">
-		<config-file parent="/resources" target="app/src/main/res/values/themes.xml">
+		<config-file parent="/resources" target="app/src/main/res/values/themes.xml" mode="merge">
 		     <style name="Theme.App.SplashScreen" parent="Theme.SplashScreen">
 			  <item name="windowSplashScreenBackground">#FFFFFF</item>
 			  <item name="windowSplashScreenIconBackgroundColor">#FFFFFF</item>
